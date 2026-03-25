@@ -1,0 +1,86 @@
+{
+    "intents":[
+        {
+            "tag": "greet",
+            "paterns":["hello","hi","hey","good morning","good evening","good afternoon","howdy"],
+            "responses":[
+                "hi there! How are you feeling today?",
+                "Hello! I'm here for you. How are you doing?",
+                "Hey! It's great to see you. How can I assist you today?",
+                "Hey! How's your day going?"
+            ]        
+        },
+        {
+            "tag": "goodbye",
+            "patterns": ["bye", "goodbye", "see you", "take care", "exit", "quit"],
+            "responses": [
+            "Take care of yourself. I'm always here if you need to talk.",
+            "Goodbye! Remember, it's okay to ask for help anytime.",
+            "See you! Stay kind to yourself."
+            ]
+        },
+        {
+            "tag": "feeling_sad",
+            "patterns": ["i am sad", "i feel sad", "i'm sad", "feeling down", "i feel low", "i'm unhappy", "i feel empty"],
+            "responses": [
+            "I'm really sorry to hear that. Want to talk about what's making you feel this way?",
+            "It's okay to feel sad sometimes. I'm here to listen.",
+            "I hear you. You don't have to go through this alone."
+            ]
+        },
+        {
+            "tag": "feeling_anxious",
+            "patterns": ["i feel anxious", "i'm anxious", "i'm worried", "i feel nervous", "i can't stop stressing", "i'm overwhelmed"],
+            "responses": [
+            "Anxiety can feel really heavy. Try taking a slow deep breath — in for 4 counts, out for 4.",
+            "I understand. It's okay to feel overwhelmed sometimes. Would you like to talk about it?",
+            "You're not alone in this. What's been worrying you lately?"
+            ]
+        },
+        {
+            "tag": "feeling_happy",
+            "patterns": ["i feel happy", "i'm doing great", "i'm good", "feeling great", "i'm excited", "i feel positive"],
+            "responses": [
+            "That's wonderful to hear! What's making you feel so good today?",
+            "So glad to hear that! Keep holding onto that feeling.",
+            "That's great! Happiness looks good on you."
+            ]
+        },
+        {
+            "tag": "feeling_angry",
+            "patterns": ["i'm angry", "i feel angry", "i'm so frustrated", "i'm furious", "everything is annoying me"],
+            "responses": [
+            "It's okay to feel angry. Take a moment to breathe. What happened?",
+            "I hear your frustration. Want to talk about what's bothering you?",
+            "Anger is valid. Let it out here — I'm listening."
+            ]
+        },
+        {
+            "tag": "need_help",
+            "patterns": ["i need help", "can you help me", "i don't know what to do", "i need someone to talk to", "i feel lost"],
+            "responses": [
+            "I'm right here. Tell me what's going on and we'll figure it out together.",
+            "You reached out and that took courage. I'm listening — what's on your mind?",
+            "Of course. You're not alone. What do you need help with?"
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": ["thank you", "thanks", "that helped", "i appreciate it", "you're helpful"],
+            "responses": [
+                "I'm glad I could help. Remember, I'm always here.",
+                "Anytime! Take good care of yourself.",
+                "You're very welcome. You matter."
+            ]
+        },
+        {
+            "tag": "default",
+            "patterns": [],
+            "responses": [
+            "I'm here to listen. Can you tell me more about how you're feeling?",
+            "I want to understand better. Could you share a little more?",
+            "Thank you for sharing. I'm here with you."
+            ]
+        }
+    ]
+}

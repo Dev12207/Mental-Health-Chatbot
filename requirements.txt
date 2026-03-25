@@ -1,0 +1,4 @@
+#all the dependencies for the project
+nltk
+vaderSentinment
+streamlit

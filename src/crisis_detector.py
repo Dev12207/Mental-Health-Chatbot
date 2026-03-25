@@ -1,0 +1,1 @@
+#checks for danger signals in the messaage
