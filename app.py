@@ -4,7 +4,7 @@ from src.preprocessor import preprocess
 from src.sentiment_analyzer import analyze_sentiment
 from src.crisis_detector import is_crisis, get_crisis_response
 from src.intent_classifier import classify_intent
-from src.responder import get_response
+from src.responder import get_response, has_gemini_key
 
 #Page Config
 st.set_page_config(
@@ -14,6 +14,10 @@ st.set_page_config(
 #Title
 st.title("Mental Health Support Bot")
 st.caption("A safe space to talk. I'm here to listen. ")
+
+if not has_gemini_key():
+    st.warning("Gemini API key is not configured. The bot will use rule-based responses until GEMINI_API_KEY is set in .env.")
+
 #Initialize chat history
 if "messages" not in st.session_state:
     st.session_state.messages=[]
@@ -47,7 +51,7 @@ if user_input:
             #Step 3: Classify intent
             intent=classify_intent(user_input)
             #step 4: Get response
-            response=get_response(intent, sentiment)
+            response=get_response(intent, sentiment, user_input)
         st.markdown(response)
     #Save bot response to chat history
     st.session_state.messages.append({

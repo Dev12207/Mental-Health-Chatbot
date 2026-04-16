@@ -1,4 +1,6 @@
 #all the dependencies for the project
 nltk
-vaderSentinment
+vaderSentiment
 streamlit
+google-genai
+python-dotenv
